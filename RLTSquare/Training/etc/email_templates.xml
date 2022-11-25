@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="email_general_email_template" label="RLTSquare Email" file="rltsquareemail.html" type="html" module="RLTSquare_Training" area="frontend"/>
+</config>

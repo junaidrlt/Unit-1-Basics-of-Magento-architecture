@@ -1,0 +1,42 @@
+<!--@subject RLTSquare Email @-->
+{{template config_path="design/email/header_template"}}
+<table style="float:left; margin-right: 10px" class="fue-abc-items">
+    <tr>
+        <td>
+            <div class="greeting">Hi {{var customerName}},</div>
+            <div>
+                {{trans "I’m from %store_name. " store_name=$store.getFrontendName()}},
+                {{trans "you haven’t forgotten us as well as the shopping cart you left in our store recently. "}}
+                {{trans "Thus, we would love to be sure that below items will catch your attention again."}}
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{var cart_items}}
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">
+            <div style="margin-top: 30px;">
+                {{trans "Use coupon code "}}
+                <span style="font-weight: bold">{{var coupon.code}}</span>
+                {{trans "at checkout!"}}
+            </div>
+            <div>{{var checkOpened}}</div>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">
+            {{trans "If you want to complete your purchase​ just click the link below."}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                {{trans "Looking forward to seeing you around!"}}
+            </div>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}
